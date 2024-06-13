@@ -1,0 +1,1018 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#039BE5"
+    tools:context=".Test"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@color/white">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/tb0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tb0"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Test de Estrés"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:text="''Llena el siguiente test de 20 preguntas en base a la frecuencia en que te sientes de determinadas maneras.'' "
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+
+        <ScrollView
+            android:id="@+id/scrlv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/text2"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/rg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1. Sensación de agobio, de angustia"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Nunca"
+                        android:textColor="@color/black"/>
+
+                    <RadioButton
+                        android:id="@+id/RB2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:textColor="@color/black"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:textColor="@color/black"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:textColor="@color/black"
+                        android:text="Casi todos los días" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="2. Sensación de inquietud, nervios, intranquilidad"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:text="3. Corazón acelerado o palpitaciones (sin enfermedades que lo justifiquen)"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB10"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB11"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="4. Sensación de fatiga"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="5. Problemas para descansar y para dormir (tardas en hacerlo, te despiertas a menudo, tienes pesadillas)"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="6. Tensión muscular o dolores en algunas partes del cuerpo (como cuello, espalda, mandíbula, o extremidades)"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="7. Presión en el pecho, sensación de ahogo o de que cuesta respirar"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="8. Dolor de tripa, náuseas o vómitos"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="9. Problemas de concentración (incluso en tareas sencillas)"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB34"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB35"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB36"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="10. Incapacidad de pensar claramente o bloqueo mental"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB37"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB38"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB39"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="11. Pensamientos anticipatorios, negativos o catastróficos"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB42"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB43"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB44"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="12. Faltas de memoria, te cuesta recordar cosas"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB45"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB46"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB47"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB48"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="13. Inseguridad a la hora de tomar decisiones (incluso simples)"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB49"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB51"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB52"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="14. Pensamientos rumiativos (le das muchas vueltas a las cosas)"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB53"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB54"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:textColor="@color/black"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB55"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB56"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="15. Fumar o beber más de lo habitual"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB57"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB58"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB59"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB60"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="16. Evitar determinadas situaciones"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB61"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB62"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB63"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB64"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="17. Cambios en el apetito"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB65"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB66"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB67"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB68"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="18. Cambios en la conducta sexual"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB69"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB70"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB71"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB72"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg19"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="19. Llorar más de lo habitual"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB73"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB74"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB75"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB76"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="20. Cambios de humor, irritabilidad"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RB77"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/RB78"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="En alguna ocasión" />
+
+                    <RadioButton
+                        android:id="@+id/RB79"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="A menudo" />
+
+                    <RadioButton
+                        android:id="@+id/RB80"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:checked="false"
+                        android:text="Casi todos los días" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btn_verresultados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:onClick="Guardar"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#D50000"
+                    android:text="Ver Resultados" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+ <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nvg1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginTop="62dp"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/cabecera"
+        app:itemTextColor="#009EE8"
+        app:menu="@menu/activity_menu"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

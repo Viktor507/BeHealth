@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/opc0"
+            android:icon="@android:drawable/star_off"
+            android:title="Inicio" />
+
+        <item
+            android:id="@+id/opc1"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Calculadora de IMC" />
+
+        <item
+            android:id="@+id/opc2"
+            android:icon="@android:drawable/ic_menu_month"
+            android:title="Registrar Agua" />
+
+        <item
+            android:id="@+id/opc3"
+            android:icon="?android:attr/actionModeFindDrawable"
+            android:title="Ver registro de agua" />
+
+        <item
+            android:id="@+id/opc4"
+            android:icon="?attr/actionModePasteDrawable"
+            android:title="Test de estrés" />
+
+
+    </group>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/opc5"
+                    android:icon="@android:drawable/ic_menu_manage"
+                    android:title="Configuración"
+                    android:iconTint="@color/black"/>
+
+                <item
+                    android:id="@+id/opc6"
+
+                    android:icon="@android:drawable/ic_lock_power_off"
+                    android:title="Salir"
+                    android:itemBackground="@color/black"/>
+
+            </group>
+
+
+
+
+</menu>
